@@ -1,16 +1,1 @@
-:root { color-scheme: dark; font-family: system-ui, sans-serif; background:#15191d; color:#f2f4f5 }
-body { margin:0; padding:20px }
-main { max-width:560px; margin:auto }
-h1 { text-align:center; margin-bottom:8px }
-h2 { font-size:1.05rem; margin:28px 0 12px; color:#cbd2d8 }
-.status { text-align:center; min-height:1.5em; color:#9ba7b0 }
-button, select, input { box-sizing:border-box; font:inherit; border-radius:8px; border:1px solid #59636b; padding:13px; background:#2b3238; color:#fff }
-button { width:100%; cursor:pointer; font-weight:650 }
-button:active { transform:translateY(1px); background:#414b53 }
-.primary { background:#176f9e; border-color:#3294c8 }
-.buttons { display:grid; grid-template-columns:1fr 1fr; gap:10px }
-label { display:block; margin:14px 0 7px }
-select, input[type=password], input[type=range] { display:block; width:100%; margin-top:7px }
-.switch input { margin-right:8px }
-output { float:right }
-#wifiResult { overflow-wrap:anywhere }
+:root{color-scheme:dark;font-family:system-ui,sans-serif;background:#15191d;color:#f2f4f5}*{box-sizing:border-box}body{margin:0;padding:68px 16px 72px}header{position:fixed;z-index:10;inset:0 0 auto;min-height:58px;display:flex;align-items:center;gap:12px;padding:8px 14px;background:#20262b;border-bottom:1px solid #3e474e}header div{flex:1;min-width:0}header strong,header small{display:block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}header small{color:#9da9b2;margin-top:2px}main{max-width:600px;margin:auto}h1{font-size:1.35rem;text-align:center;margin:8px 0 12px}h2{font-size:1.1rem;margin-top:30px;color:#cbd2d8}.view{display:none}.view.active{display:block}.hero{display:block;width:min(100%,440px);max-height:260px;object-fit:contain;margin:0 auto 16px;border-radius:10px;background:#0d0f11}button,select,input{font:inherit;color:#fff;background:#2d353b;border:1px solid #59646c;border-radius:9px;padding:13px}button{cursor:pointer;font-weight:650}button:active{transform:translateY(1px);background:#45515a}.connect{width:auto;padding:9px 13px;background:#176f9e;border-color:#3294c8}.icon-button{width:42px;padding:7px;font-size:1.4rem}.menu,.sound-grid{display:grid;gap:10px}.menu button{width:100%}.sound-grid{grid-template-columns:1fr 1fr}.sound-grid button{min-height:54px}.primary{width:100%;background:#176f9e;border-color:#3294c8}label{display:block;margin:15px 0 8px}select,input[type=password],input[type=range]{display:block;width:100%;margin-top:7px}.switch input{margin-right:8px}output{float:right}.note,#wifiResult{color:#aeb9c0;overflow-wrap:anywhere}nav{position:fixed;z-index:10;inset:auto 0 0;display:grid;grid-template-columns:repeat(4,1fr);background:#20262b;border-top:1px solid #3e474e}nav button{border:0;border-radius:0;padding:14px 5px;font-size:.85rem;background:transparent}nav button.active{color:#67c4f5;background:#2a3339}@media(max-width:380px){.sound-grid{grid-template-columns:1fr}}
