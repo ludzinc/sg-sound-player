@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#20252b">
+  <title>SG Sound Player</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>SG Sound Player</h1>
+    <p id="status" class="status">Not connected</p>
+    <button id="connect" class="primary">Connect to Sound Player</button>
+
+    <section id="controls" hidden>
+      <h2>Sounds</h2>
+      <div class="buttons">
+        <button data-sound="1">ROAR</button><button data-sound="2">SNORTS</button>
+        <button data-sound="3">WO-AAAR</button><button data-sound="4">LOW GROWL</button>
+        <button data-sound="5">W-ROAR</button><button data-sound="6">SNARL</button>
+      </div>
+      <h2>Settings</h2>
+      <label>Volume <output id="volumeValue">50%</output>
+        <input id="volume" type="range" min="0" max="100" step="10" value="50">
+      </label>
+      <label class="switch"><input id="pir" type="checkbox"> Enable PIR trigger</label>
+
+      <h2>Wi-Fi setup</h2>
+      <button id="scan">Scan for Wi-Fi networks</button>
+      <label>Network<select id="ssid"><option value="">Select a network</option></select></label>
+      <label>Password<input id="password" type="password" autocomplete="current-password"></label>
+      <button id="join" class="primary">Save and connect</button>
+      <p id="wifiResult"></p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
